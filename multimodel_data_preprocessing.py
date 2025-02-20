@@ -142,3 +142,22 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
 plt.show()
+
+
+# Data Preprocessing:
+
+# Text: Tokenization, padding, and embedding using a simple LSTM-based text network.
+# Image: Resized to 224x224 (for EfficientNetB0), normalized to [0,1], and then used in the image subnetwork.
+# Categorical and Numerical Data: Categorical data is one-hot encoded, while numerical features (e.g., price) are scaled.
+# Model Architecture:
+
+# Text Subnetwork: Embedding -> LSTM layer to process textual descriptions.
+# Image Subnetwork: EfficientNetB0 pretrained on ImageNet, with feature extraction using global average pooling.
+# Numerical and Categorical Data: Processed using fully connected layers.
+# Fusion and Classification: All data types are concatenated, and the resulting feature vector is passed through additional dense layers leading to the final output layer with a softmax activation (for classification).
+
+# Training and Evaluation:
+
+# The model is compiled with Adam optimizer and categorical cross-entropy loss function, then trained and evaluated.
+# Accuracy, precision, recall, and confusion matrix are used to assess performance.
+# Visualization: Training and validation accuracy and loss curves are plotted to monitor model performance over epochs.
