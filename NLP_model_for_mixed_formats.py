@@ -1,3 +1,9 @@
+# Load & Preprocess Data from different formats (CSV, JSON, TXT).
+# Text Processing: Tokenization & padding using TensorFlow Tokenizer.
+# Handling Categorical & Numerical Data.
+# Building a TensorFlow Model: Using an LSTM for text and integrating categorical & numerical inputs.
+
+
 import pandas as pd
 import json
 import numpy as np
