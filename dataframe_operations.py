@@ -1,18 +1,12 @@
 ## important pandas dataframe operations
-
-
 df.head(5)
 
 df.isna()
 df.dropna(inplace=True) 
 
 df.drop
-
 df.info()
-
 df.describe
-
-
 df.assign
 
 5. Identify numerical and categorical columns
