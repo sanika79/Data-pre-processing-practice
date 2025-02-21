@@ -22,9 +22,8 @@ df_enc= df.assign(Education_encode=education_oe)
 print(df_enc.shape)
 print(df_enc[['Education', 'Education_encode']])
 
-# -----------------------------
 # 3. Text Preprocessing
-# -----------------------------
+
 nltk.download("stopwords")
 stop_words = set(stopwords.words("english"))
 
